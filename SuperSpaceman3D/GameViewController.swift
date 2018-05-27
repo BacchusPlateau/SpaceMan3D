@@ -19,8 +19,13 @@ class GameViewController: UIViewController {
      
         mainScene = createMainScene()
         mainScene!.rootNode.addChildNode(createFloorNode())
-        //mainScene!.rootNode.addChildNode(Collectable.pyramidNode())
+        mainScene!.rootNode.addChildNode(Collectable.pyramidNode())
         mainScene!.rootNode.addChildNode(Collectable.sphereNode())
+        mainScene!.rootNode.addChildNode(Collectable.boxNode())
+        mainScene!.rootNode.addChildNode(Collectable.tubeNode())
+        mainScene!.rootNode.addChildNode(Collectable.cylinderNode())
+        mainScene!.rootNode.addChildNode(Collectable.torusNode())
+        
         
         let sceneView = self.view as! SCNView
         sceneView.scene = mainScene
