@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BA9B5C2920BB43E9008315BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B5C2820BB43E9008315BE /* AppDelegate.swift */; };
-		BA9B5C2B20BB43E9008315BE /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9B5C2A20BB43E9008315BE /* art.scnassets */; };
 		BA9B5C2D20BB43E9008315BE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B5C2C20BB43E9008315BE /* GameViewController.swift */; };
 		BA9B5C3020BB43E9008315BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9B5C2E20BB43E9008315BE /* Main.storyboard */; };
 		BA9B5C3220BB43EA008315BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9B5C3120BB43EA008315BE /* Assets.xcassets */; };
 		BA9B5C3520BB43EA008315BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9B5C3320BB43EA008315BE /* LaunchScreen.storyboard */; };
+		BA9B5C3E20BB4874008315BE /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9B5C3D20BB4874008315BE /* art.scnassets */; };
+		BA9B5C4020BB4C2B008315BE /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B5C3F20BB4C2B008315BE /* Collectable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA9B5C2520BB43E9008315BE /* SuperSpaceman3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSpaceman3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9B5C2820BB43E9008315BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA9B5C2A20BB43E9008315BE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		BA9B5C2C20BB43E9008315BE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BA9B5C2F20BB43E9008315BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA9B5C3120BB43EA008315BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA9B5C3420BB43EA008315BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA9B5C3620BB43EA008315BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9B5C3D20BB4874008315BE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BA9B5C3F20BB4C2B008315BE /* Collectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collectable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		BA9B5C2720BB43E9008315BE /* SuperSpaceman3D */ = {
 			isa = PBXGroup;
 			children = (
+				BA9B5C3D20BB4874008315BE /* art.scnassets */,
 				BA9B5C2820BB43E9008315BE /* AppDelegate.swift */,
-				BA9B5C2A20BB43E9008315BE /* art.scnassets */,
 				BA9B5C2C20BB43E9008315BE /* GameViewController.swift */,
+				BA9B5C3F20BB4C2B008315BE /* Collectable.swift */,
 				BA9B5C2E20BB43E9008315BE /* Main.storyboard */,
 				BA9B5C3120BB43EA008315BE /* Assets.xcassets */,
 				BA9B5C3320BB43EA008315BE /* LaunchScreen.storyboard */,
@@ -125,8 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9B5C2B20BB43E9008315BE /* art.scnassets in Resources */,
 				BA9B5C3520BB43EA008315BE /* LaunchScreen.storyboard in Resources */,
+				BA9B5C3E20BB4874008315BE /* art.scnassets in Resources */,
 				BA9B5C3220BB43EA008315BE /* Assets.xcassets in Resources */,
 				BA9B5C3020BB43E9008315BE /* Main.storyboard in Resources */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9B5C4020BB4C2B008315BE /* Collectable.swift in Sources */,
 				BA9B5C2D20BB43E9008315BE /* GameViewController.swift in Sources */,
 				BA9B5C2920BB43E9008315BE /* AppDelegate.swift in Sources */,
 			);
