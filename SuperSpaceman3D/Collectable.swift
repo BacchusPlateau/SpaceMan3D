@@ -34,7 +34,11 @@ class Collectable {
         
         sphereNode.name = "sphere"
         sphereNode.position = position
-        sphereNode.geometry?.firstMaterial?.diffuse.contents = UIColor.red
+        sphereNode.geometry?.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "earthDiffuse")
+        sphereNode.geometry?.firstMaterial?.ambient.contents = #imageLiteral(resourceName: "earthAmbient")
+        sphereNode.geometry?.firstMaterial?.specular.contents = #imageLiteral(resourceName: "earthSpecular")
+        sphereNode.geometry?.firstMaterial?.normal.contents = #imageLiteral(resourceName: "earthNormal")
+        sphereNode.geometry?.firstMaterial?.diffuse.mipFilter = SCNFilterMode.linear
         sphereNode.geometry?.firstMaterial?.shininess = 1.0
         
         return sphereNode
@@ -88,14 +92,27 @@ class Collectable {
     
     class func boxNode() -> SCNNode {
         
+        var materials = [SCNMaterial]()
+        let boxImage = "boxSide"
+        
+        for index in 1...6 {
+            
+            let material = SCNMaterial()
+            material.diffuse.contents = UIImage(named: boxImage + String(index))
+            materials.append(material)
+            
+        }
+        
         let box = SCNBox(width: 3, height: 3, length: 3, chamferRadius: 0)
         let boxNode = SCNNode(geometry: box)
         let position = SCNVector3Make(200, 3, -0)
         
         boxNode.position = position
         boxNode.name = "box"
-        boxNode.geometry?.firstMaterial?.diffuse.contents = UIColor.brown
-        boxNode.geometry?.firstMaterial?.shininess = 1.0
+        boxNode.geometry?.materials = materials
+        
+     //   boxNode.geometry?.firstMaterial?.diffuse.contents = UIColor.brown
+     //   boxNode.geometry?.firstMaterial?.shininess = 1.0
         
         return boxNode
         
